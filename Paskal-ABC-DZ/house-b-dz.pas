@@ -1,0 +1,30 @@
+﻿program houseb;
+uses Drawman;
+begin
+Field(10,8);
+ToPoint(1,5); PenDown;
+ToPoint(1,1);
+ToPoint(9,1);
+ToPoint(9,5);
+ToPoint(5,7);
+ToPoint(1,5);
+ToPoint(9,5); PenUp;
+ToPoint(3,3);
+PenDown;
+ToPoint(3,4);
+ToPoint(4,4);
+ToPoint(4,3);
+ToPoint(3,3);PenUp;
+ToPoint(5,4);PenDown;
+ToPoint(6,4);
+ToPoint(6,3);
+ToPoint(5,3);
+ToPoint(5,4);
+PenUp;
+ToPoint(8,1);
+PenDown;
+ToPoint(8,3);
+ToPoint(7,3);
+ToPoint(7,1);
+PenUp;
+end.
