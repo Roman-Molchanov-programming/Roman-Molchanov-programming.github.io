@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="ru"> 
+	<head>
+		<title>  
+		Git-Programm
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<style>
+   .text {
+    text-align:  center;
+   }
+   .text2 {
+    text-align:  right;
+   }
+   .body {
+				background-image: url(Slaider/Computer-white.png);
+				background-repeat: no-repeat;
+				background-position: 90% 10%;		
+			}
+	.body2 {
+				background-image: url(Slaider/background-for-git.jpg);
+				background-repeat: no-repeat;
+				background-position: 90% -5%;
+	}
+		.example {
+		background: #fc0; /* Цвет фона */
+		outline: 2px solid #000; /* Чёрная рамка */
+		border: 3px solid #fff; /* Белая рамка */
+		border-radius: 10px; /* Радиус скругления */
+		padding: 100px; /* Поля */
+		color: #black; /* Цвет текста */    
+		width: 300px;
+		height: 280px
+				}
+	h1 {
+    font-size: 285%; /* Размер шрифта в процентах */ 
+   } 
+   
+   <!--Снег-->
+  .top {
+		position: 90% -10%;
+		}
+		
+	.snowContainer { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0;}
+#snow {width: 100%; height: 100%; background-image: url("Slaider/snow/snow1.png"), url("Slaider/snow/snow2.png"), url("Slaider/snow/snow3.png"); -webkit-animation: snow 20s linear infinite;-moz-animation: snow 20s linear infinite;-ms-animation: snow 20s linear infinite;animation: snow 20s linear infinite;}
+@keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+@-moz-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+@-webkit-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+@-ms-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+	<!--Конец снега-->
+	
+	#layer1 { z-index: 2; }
+	
+    </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script>
+  <link rel="shortcut icon" href="Slaider/Icon-Git.png" type="image/ico">
+	</head>
+	<body>
+	<div class="body2">
+	<div id="layer1">
+	<div class="body">
+	
+	
+	
+	<h3>
+	<div class="example">
+	<ul>
+		<h1><li>Git init</li>
+		<li>Git status</li>
+		<li>Git commit</li>
+		<li>Git add</li></h1>
+	</ul>
+	</div>
+	<div class="text">Ссылки</div>
+	<ul>
+		<li><a href="index.html">index</a> </li>
+	</ul>
+	<ul>
+		<li>git init - делает папку доступной для работы из гита</li> 							
+		<li>git status - показывает состояния файлов в рабочей директории и индексе</li>
+		<li>git commit - берёт все данные, добавленные в индекс с помощью git add, и<br>
+		сохраняет их слепок во внутренней базе данных(делает commit).</li>
+		<li>git add - добавляет содержимое рабочей директории в индекс (staging area)<br>
+		для последующего коммита</li>
+	</ul>
+	</h3>
+	<h2><div class="text">Чтобы закинуть папку на гит нужно</div></h2>
+	<h3>
+	<ol>
+		<li>Зайти в нужную папку которая иницилизирована и связана с сервером.</li>
+		<li>Добавить все с помощью git add --all или git add (.).</li>
+		<li>Прежде чем делать коммит проверте что файлы добавлены (git add) с помощью (git status)</li>
+		<li>Закомитить с помощью git commit -m "коментарий для коммита".</li>
+		<li>Закинуть на github с помощью команды Git push.</li>
+		<li>Прежде чем писать команду (git push) введите команду (git status), должно быть вот так<br>
+		<img src="Slaider/2-push.PNG"></li><br>
+		</h3>
+		<h2 style="color:#ff0000">Обратите внимание на красное выделение в скриншоте. Запушить можно сразу 2 файла и более.</h2>
+	</ol>
+	
+	<h2><div class="text">Главная ошибка по которым файл может не попасть на гит</div></h2>
+	<h3>
+	Файл может лежать не в нужной папке. Нужна папка - папка которая иницилизирована и связана с сервером.</li>
+	<br>
+	
+	! Важность атомарных коммитов - дописать.<br>
+	- Помимо CLI git существующе GUI: например - Tortoise Git(установлено), или Smart Git.<br>
+	Чтобы пользовоаться ГУИ, обязательно надо понимать логику CLI.<br>
+<br>	
+	Тезисы<br>
+	Когда нужно и когда не нужно использовать слайдер.<br>
+	Именование картинок (большие и маленькие буквы) в Windows and Linux.<br>
+	
+	</h3>
+	
+	</div>
+	</div>
+	</div>
+	<div class="top">
+	<div class="snowContainer">
+	<div id="snow">
+	</div></div></div>
+	<div class="text">
+	<h2>Скриншоты</h2>
+	</div>
+    <div class="slider">
+    <div><img src="Slaider/Adding-Newfile.png"></div>
+	<div><img src="Slaider/git-commit-minus-m.PNG"></div>
+	<div><img src="Slaider/git-repository-connected.PNG"></div>
+	<div><img src="Slaider/git-add-all-shortcut.PNG"></div>
+	</div>
+	</body>
+</html>
