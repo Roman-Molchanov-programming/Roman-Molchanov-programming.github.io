@@ -29,7 +29,7 @@
 		border: 3px solid #fff; /* Белая рамка */
 		border-radius: 10px; /* Радиус скругления */
 		padding: 100px; /* Поля */
-		color: #black; /* Цвет текста */    
+		color: #000000; /* Цвет текста */    
 		width: 300px;
 		height: 280px
 				}
@@ -70,43 +70,46 @@
 	<div class="body">
 	
 	
-	
-	<h3>
 	<div class="example">
-	<ul>
-		<h1><li>Git init</li>
-		<li>Git status</li>
-		<li>Git commit</li>
-		<li>Git add</li></h1>
-	</ul>
+		<h1>
+		<ul>
+			<li>Git init</li>
+			<li>Git status</li>
+			<li>Git commit</li>
+			<li>Git add</li>
+		</ul>
+		</h1>
 	</div>
 	
 	<ul>
+		<h3>
 		<li>git init - делает папку доступной для работы из гита</li> 							
 		<li>git status - показывает состояния файлов в рабочей директории и индексе</li>
 		<li>git commit - берёт все данные, добавленные в индекс с помощью git add, и<br>
 		сохраняет их слепок во внутренней базе данных(делает commit).</li>
 		<li>git add - добавляет содержимое рабочей директории в индекс (staging area)<br>
 		для последующего коммита</li>
+		</h3>
 	</ul>
-	</h3>
-	<h2><div class="text">Чтобы закинуть папку на гит нужно</div></h2>
+	
+	<div class="text"><h2>Чтобы закинуть папку на гит нужно</h2></div>
 	<h3>
 	<ol>
+	
 		<li>Зайти в нужную папку которая иницилизирована и связана с сервером.</li>
 		<li>Добавить все с помощью git add --all или git add (.).</li>
 		<li>Прежде чем делать коммит проверте что файлы добавлены (git add) с помощью (git status)</li>
 		<li>Закомитить с помощью git commit -m "коментарий для коммита".</li>
 		<li>Закинуть на github с помощью команды Git push.</li>
 		<li>Прежде чем писать команду (git push) введите команду (git status), должно быть вот так<br>
-		<img src="Slaider/2-push.PNG"></li><br>
-		</h3>
+		<img src="Slaider/2-push.PNG" alt="2 пуша за раз"></li><br>
+		
 		<h2 style="color:#ff0000">Обратите внимание на красное выделение в скриншоте. Запушить можно сразу 2 файла и более.</h2>
 	</ol>
-	
-	<h2><div class="text">Главная ошибка по которым файл может не попасть на гит</div></h2>
+	</h3>
+	<div class="text"><h2>Главная ошибка по которым файл может не попасть на гит</h2></div>
 	<h3>
-	Файл может лежать не в нужной папке. Нужна папка - папка которая иницилизирована и связана с сервером.</li>
+	Файл может лежать не в нужной папке. Нужна папка - папка которая иницилизирована и связана с сервером.
 	<br>
 	
 	! Важность атомарных коммитов - дописать.<br>
@@ -117,6 +120,7 @@
 	Когда нужно и когда не нужно использовать слайдер.<br>
 	Именование картинок (большие и маленькие буквы) в Windows and Linux.<br>
 	
+	https://roman-molchanov-programming.github.io/ - мой беспланый домен
 	</h3>
 	
 	</div>
@@ -133,10 +137,10 @@
 	<h2>Скриншоты</h2>
 	</div>
     <div class="slider">
-    <div><img src="Slaider/Adding-Newfile.png"></div>
-	<div><img src="Slaider/git-commit-minus-m.PNG"></div>
-	<div><img src="Slaider/git-repository-connected.PNG"></div>
-	<div><img src="Slaider/git-add-all-shortcut.PNG"></div>
+    <div><img src="Slaider/Adding-Newfile.png" alt="git add"></div>
+	<div><img src="Slaider/git-commit-minus-m.PNG" alt="git commit -m"></div>
+	<div><img src="Slaider/git-repository-connected.PNG" alt="git repository"></div>
+	<div><img src="Slaider/git-add-all-shortcut.PNG" alt="git add --all"></div>
 	</div>
 	</body>
 </html>
