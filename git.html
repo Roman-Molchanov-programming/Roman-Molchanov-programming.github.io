@@ -52,6 +52,12 @@
 	
 	#layer1 { z-index: 2; }
 	
+	button {
+    border: 2px solid #e34761; /* Параметры рамки */
+    background: #f3dbdf; /* Цвет фона */
+    font-size: 14px; /* Размер текста */
+    padding: 5px 20px; /* Поля вокруг текста */
+   }
     </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -77,6 +83,8 @@
 			<li>Git status</li>
 			<li>Git commit</li>
 			<li>Git add</li>
+			<li>Git diff</li>
+			<li>Git push</li>
 		</ul>
 		</h1>
 	</div>
@@ -89,6 +97,10 @@
 		сохраняет их слепок во внутренней базе данных(делает commit).</li>
 		<li>git add - добавляет содержимое рабочей директории в индекс (staging area)<br>
 		для последующего коммита</li>
+		<li><b>git diff</b> - используется для вычисления разницы между любыми двумя Git деревьями.<br>
+		Это может быть разница между вашей рабочей директорией и индексом (собственно <b>git diff</b>), <br>
+		разница между индексом и последним коммитом (<b>git diff --staged</b>), или между любыми двумя коммитами (<b>git diff master branchB</b>).</li>
+		<li><b>git push</b> - закидывает закоммиченную папку на сервер</li>
 		</h3>
 	</ul>
 	
@@ -126,9 +138,7 @@
 	</div>
 	</div>
 	</div>
-	<ul>
-		<li><a href="index.html">index</a> </li>
-	</ul>
+		<button><a href="index.html">index</a></button>
 	<div class="top">
 	<div class="snowContainer">
 	<div id="snow">
