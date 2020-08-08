@@ -25,6 +25,6 @@ begin
         if (Text[i] = TextPercentageSymbol) then
         HowMuchTextPercentageSymbol := HowMuchTextPercentageSymbol + 1;
     end;
-    Percentage := (HowMuchTextPercentageSymbol div OllSymbols) * 100;
+    Percentage := HowMuchTextPercentageSymbol div OllSymbols * 100;
     writeln('Процент ',TextPercentageSymbol,' из всего текста =', Percentage,'%');
 end.
