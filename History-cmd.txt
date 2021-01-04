@@ -1,0 +1,243 @@
+Microsoft Windows [Version 6.3.9600]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2013. Все права защищены.
+
+C:\Users\Натаська>cd /d "D:\CS\sites\dev-mathematics-by.github.io"
+
+D:\CS\sites\dev-mathematics-by.github.io>git branch
+  M-17-correct-attribute-order-for-meta-tag
+  M-19-adding-video-to-the-index-html
+* M-20-adding-space-index-html
+  main
+
+D:\CS\sites\dev-mathematics-by.github.io>git branch -r
+  origin/HEAD -> origin/main
+  origin/M-14-index.html-should-have-correct-indentation-and-correct-line-breaks
+  origin/M-16-correct-link-to-favicon-on-index-html
+  origin/M-17-correct-attribute-order-for-meta-tag
+  origin/M-19-adding-video-to-the-index-html
+  origin/M-20-adding-space-index-html
+  origin/backup-2020-12-12
+  origin/backup-2020-12-19
+  origin/main
+
+D:\CS\sites\dev-mathematics-by.github.io>git branch
+  M-17-correct-attribute-order-for-meta-tag
+  M-19-adding-video-to-the-index-html
+* M-20-adding-space-index-html
+  main
+
+D:\CS\sites\dev-mathematics-by.github.io>echo "На гитхабе нажали кнопку удалить
+бранч"
+"На гитхабе нажали кнопку удалить бранч"
+
+D:\CS\sites\dev-mathematics-by.github.io>git branch -r
+  origin/HEAD -> origin/main
+  origin/M-14-index.html-should-have-correct-indentation-and-correct-line-breaks
+  origin/M-16-correct-link-to-favicon-on-index-html
+  origin/M-17-correct-attribute-order-for-meta-tag
+  origin/M-19-adding-video-to-the-index-html
+  origin/M-20-adding-space-index-html
+  origin/backup-2020-12-12
+  origin/backup-2020-12-19
+  origin/main
+
+D:\CS\sites\dev-mathematics-by.github.io>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> M-20-adding-space-index-html
+
+
+D:\CS\sites\dev-mathematics-by.github.io>git branch -r
+  origin/HEAD -> origin/main
+  origin/M-14-index.html-should-have-correct-indentation-and-correct-line-breaks
+  origin/M-16-correct-link-to-favicon-on-index-html
+  origin/M-17-correct-attribute-order-for-meta-tag
+  origin/M-19-adding-video-to-the-index-html
+  origin/M-20-adding-space-index-html
+  origin/backup-2020-12-12
+  origin/backup-2020-12-19
+  origin/main
+
+D:\CS\sites\dev-mathematics-by.github.io>git status
+On branch M-20-adding-space-index-html
+nothing to commit, working tree clean
+
+D:\CS\sites\dev-mathematics-by.github.io>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> M-20-adding-space-index-html
+
+
+D:\CS\sites\dev-mathematics-by.github.io>echo "Команда Delete branch на github н
+е удаляет физический бранч с сервера а лишь разрывает связь между локальным бран
+чем и бранчем на сервере"
+"Команда Delete branch на github не удаляет физический бранч с сервера а лишь ра
+зрывает связь между локальным бранчем и бранчем на сервере"
+
+D:\CS\sites\dev-mathematics-by.github.io>git branch
+  M-17-correct-attribute-order-for-meta-tag
+  M-19-adding-video-to-the-index-html
+* M-20-adding-space-index-html
+  main
+
+D:\CS\sites\dev-mathematics-by.github.io>echo "Если бы я сейчас сделал бы бранч
+от текущего а не от main то моя ошибка бы повторилась"
+"Если бы я сейчас сделал бы бранч от текущего а не от main то моя ошибка бы повт
+орилась"
+
+D:\CS\sites\dev-mathematics-by.github.io>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+D:\CS\sites\dev-mathematics-by.github.io>
+D:\CS\sites\dev-mathematics-by.github.io>git pull
+Already up to date.
+
+D:\CS\sites\dev-mathematics-by.github.io>echo "Обязательно выполнять git pull по
+сле чекаута на main что бы подтянуть возможные чужые изменения"
+"Обязательно выполнять git pull после чекаута на main что бы подтянуть возможные
+ чужые изменения"
+
+D:\CS\sites\dev-mathematics-by.github.io>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+D:\CS\sites\dev-mathematics-by.github.io>git branch
+  M-17-correct-attribute-order-for-meta-tag
+  M-19-adding-video-to-the-index-html
+  M-20-adding-space-index-html
+* main
+
+D:\CS\sites\dev-mathematics-by.github.io>git checkout -b M-20-adding-space-index
+-html-v2
+Switched to a new branch 'M-20-adding-space-index-html-v2'
+
+D:\CS\sites\dev-mathematics-by.github.io>git push -u origin M-20-adding-space-in
+dex-html-v2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'M-20-adding-space-index-html-v2' on GitHub by
+ visiting:
+remote:      https://github.com/dev-mathematics-by/dev-mathematics-by.github.io/
+pull/new/M-20-adding-space-index-html-v2
+remote:
+To https://github.com/dev-mathematics-by/dev-mathematics-by.github.io.git
+ * [new branch]      M-20-adding-space-index-html-v2 -> M-20-adding-space-index-
+html-v2
+Branch 'M-20-adding-space-index-html-v2' set up to track remote branch 'M-20-add
+ing-space-index-html-v2' from 'origin'.
+
+D:\CS\sites\dev-mathematics-by.github.io>git branch -r
+  origin/HEAD -> origin/main
+  origin/M-14-index.html-should-have-correct-indentation-and-correct-line-breaks
+  origin/M-16-correct-link-to-favicon-on-index-html
+  origin/M-17-correct-attribute-order-for-meta-tag
+  origin/M-19-adding-video-to-the-index-html
+  origin/M-20-adding-space-index-html
+  origin/M-20-adding-space-index-html-v2
+  origin/backup-2020-12-12
+  origin/backup-2020-12-19
+  origin/main
+
+D:\CS\sites\dev-mathematics-by.github.io>git branch
+  M-17-correct-attribute-order-for-meta-tag
+  M-19-adding-video-to-the-index-html
+  M-20-adding-space-index-html
+* M-20-adding-space-index-html-v2
+  main
+
+D:\CS\sites\dev-mathematics-by.github.io>git status
+On branch M-20-adding-space-index-html-v2
+Your branch is up to date with 'origin/M-20-adding-space-index-html-v2'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\CS\sites\dev-mathematics-by.github.io>git add .
+
+D:\CS\sites\dev-mathematics-by.github.io>git status
+On branch M-20-adding-space-index-html-v2
+Your branch is up to date with 'origin/M-20-adding-space-index-html-v2'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+D:\CS\sites\dev-mathematics-by.github.io>echo "Перед git add лучше всегда делать
+ git diff"
+"Перед git add лучше всегда делать git diff"
+
+D:\CS\sites\dev-mathematics-by.github.io>git status
+On branch M-20-adding-space-index-html-v2
+Your branch is up to date with 'origin/M-20-adding-space-index-html-v2'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+D:\CS\sites\dev-mathematics-by.github.io>git commit -m "M-20 добавлен пропущенны
+й пробел в index.html"
+[M-20-adding-space-index-html-v2 925b6ed] M-20 добавлен пропущенный пробел в ind
+ex.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Warning: Your console font probably doesn't support Unicode. If you experience s
+trange characters in the output, consider switching to a TrueType font such as C
+onsolas!
+
+D:\CS\sites\dev-mathematics-by.github.io>git status
+On branch M-20-adding-space-index-html-v2
+Your branch is ahead of 'origin/M-20-adding-space-index-html-v2' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\CS\sites\dev-mathematics-by.github.io>echo "В комите лучше указывать (M-20)"
+"В комите лучше указывать (M-20)"
+
+D:\CS\sites\dev-mathematics-by.github.io>git status
+On branch M-20-adding-space-index-html-v2
+Your branch is ahead of 'origin/M-20-adding-space-index-html-v2' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\CS\sites\dev-mathematics-by.github.io>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 368 bytes | 184.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/dev-mathematics-by/dev-mathematics-by.github.io.git
+   d070c89..925b6ed  M-20-adding-space-index-html-v2 -> M-20-adding-space-index-
+html-v2
+
+D:\CS\sites\dev-mathematics-by.github.io>echo "Сначала git push -u origin (Созда
+ние и связывание бранча с сервером) а только потом git push (Закидка кода на бра
+нч)"
+"Сначала git push -u origin (Создание и связывание бранча с сервером) а только п
+отом git push (Закидка кода на бранч)"
+
+D:\CS\sites\dev-mathematics-by.github.io>
