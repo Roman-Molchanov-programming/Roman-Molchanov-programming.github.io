@@ -37,21 +37,12 @@
 	
 				
 	h1 {
-    font-size: 285%; /* Размер шрифта в процентах */ 
+    font-size: 230%; /* Размер шрифта в процентах */ 
    } 
    
    <!--Снег-->
-  .top {
-		position: 90% -10%;
-		}
-		
-	.snowContainer { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0;}
-#snow {width: 100%; height: 100%; background-image: url("Slaider/snow/snow1.png"), url("Slaider/snow/snow2.png"), url("Slaider/snow/snow3.png"); -webkit-animation: snow 20s linear infinite;-moz-animation: snow 20s linear infinite;-ms-animation: snow 20s linear infinite;animation: snow 20s linear infinite;}
-@keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
-@-moz-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
-@-webkit-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
-@-ms-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
-	<!--Конец снега-->
+  
+	
 	
 	#layer1 { z-index: 2; }
 	
@@ -82,17 +73,18 @@
 	<div class="example">
 		<h1>
 		<ul>
-			<li>Git init</li>
-			<li>Git status</li>
-			<li>Git commit</li>
-			<li>Git add</li>
+			<li>Git checkout -b</li>
+			<li>Git checkout</li>
+			<li>Git branch</li>
+			<li>Git branch -r</li>
+			<li>Git push -u origin</li>
 			<li>Git diff</li>
-			<li>Git push</li>
-			<li>Git clean -xdf</li>
+			<li>Git pull</li>
 		</ul>
 		</h1>
-	</div>
-	
+	</div> <br>
+	<h3>Как использовать данные команды описано в Branch-Commands(находится ниже)</h3>
+	<h2>Стандартные команды</h2>
 	<ul>
 		<h3>
 		<li>git init - делает папку доступной для работы из гита</li> 							
@@ -147,19 +139,13 @@
 	</div>
 	</div>
 		<button><a href="index.html">index</a></button>
-	<div class="top">
-	<div class="snowContainer">
-	<div id="snow">
-	</div></div></div>
 	<div class="text">
 	<h2>Скриншоты</h2>
 	</div>
-    <div class="slider">
-    <div><img src="Slaider/Adding-Newfile.png" alt="git add"></div>
-	<div><img src="Slaider/git-commit-minus-m.PNG" alt="git commit -m"></div>
-	<div><img src="Slaider/git-repository-connected.PNG" alt="git repository"></div>
-	<div><img src="Slaider/git-add-all-shortcut.PNG" alt="git add --all"></div>
-	</div>
+    <img src="Slaider/Adding-Newfile.png" alt="git add"> <br>
+	<img src="Slaider/git-commit-minus-m.PNG" alt="git commit -m"> <br>
+	<img src="Slaider/git-repository-connected.PNG" alt="git repository"> <br>
+	<img src="Slaider/git-add-all-shortcut.PNG" alt="git add --all"> <br>
 
 	https://github.com/Roman-Molchanov-programming/Roman-Molchanov-programming.github.io/blob/master/%D0%AD%D1%81%D1%81%D0%B5/AsseOfTheDudy.html <br>
 	%D0%AD%D1%81%D1%81%D0%B5 - пример того что в названиях надо пользоваться не ктриллицей а латиницей! <br>
@@ -183,6 +169,43 @@
 			- https://roman-molchanov-programming.github.io/modern_Internet_services.html
 		</li>
 	</ol>
-	
+	<h2>Branch-Commands</h2>
+    <ul>
+        <li><strong>Создание бранча</strong> - git checkout -b название бранча (M-17-correct-attribute-order-for-meta-tag)</li>
+        <li><strong>Названия доступных бранчей</strong> - git branch</li>
+        <li><strong>Проверка всех бранчей</strong> - git branch -r</li>
+        <li><strong>Проверка в изменениях в файлах</strong> - git diff (q - для выхода)</li>
+        <li><strong>Выбор бранча</strong> - git checkout название бранча</li>
+        <li><strong>Пуш бранча</strong> - git push -u origin название</li>
+    </ul>
+    <h3>Mergin blocked and pull request</h3>
+    <img src="images/Mergin-is-blocked.png" alt="">
+    <img src="images/Merge-pull-request.png" alt="">
+    workflow по работе над фичей
+    Создать бранч с нормальным именем и закинуть его на сервер связав: <br>
+    1. Git checkout main (Бранчи нужно делать строго от этого бранча)
+    <p>Если бы я сделал бы бранч от текущего а не от main то произошла бы ошибка, из-за которой пришлось бы
+        переделывать не только весь бранч, но и его комиты.
+    </p>
+    2. Git pull.
+    <p>
+        Обязательно выполнять git pull после чекаута на main что бы подтянуть возможные чужые изменения.
+    </p>
+    3. Git checkout -b branchx. <br>
+    4.!!!!!!!!!!!!!!!!!! Git push -u origin название бранча. <br>
+    5.Перед git add лучше всегда делать git diff. <br>
+    6.В комите лучше указывать (M-20). <br>
+    7.Сначала git push -u origin (Создание и связывание бранча с сервером) а только потом 
+    git push (Закидка кода на бранч). <br>
+    <h2>Delete branch</h2>
+    На гитхабе нажали кнопку удалить бранч. Команда Delete branch на github не удаляет физический бранч с сервера а лишь ра
+    зрывает связь между локальным бранчем и бранчем на сервере.
+    <h2>Вещи на которые надо обращать внимание</h2>
+    <ul>
+        <li>!!!  Внимательно читаем issues.</li>
+        <li>Авторское право</li>
+        <li>Каждая фича и бранча должна быть независима от другиъ</li>
+    </ul>
+    <h2>Имя пользователя и как создать статический сайт на github</h2>
 	</body>
 </html>
