@@ -4,14 +4,17 @@
 // 3.найти параметры запроса (после ?)
 // 4.найти папку с файлом или же отдельный файл (перед ? но после / будет файл - с, все что между x/ и с - путь к файлу
 // 5.определить домены
-var URL: string;
-lengthOfURL: integer;
+var URL, sResult: string;
+lengthOfURL, x: integer;
 begin
     writeln('Введите URL');
-    readln(URL); writeln(URL);
+    readln(URL); 
     lengthOfURL := length(URL);
+    x:= 1;
     for var i := 1 to lengthOfURL do
     begin
-        
+        sResult := Copy(Url,x,1);
+        writeln(sResult);
+        x:= x + 1;
     end;
 end.
