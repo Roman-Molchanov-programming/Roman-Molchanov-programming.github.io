@@ -5,16 +5,14 @@
 // 4.найти папку с файлом или же отдельный файл (перед ? но после / будет файл - с, все что между x/ и с - путь к файлу
 // 5.определить домены
 var URL, sResult: string;
-lengthOfURL, x: integer;
+lengthOfURL: integer;
 begin
     writeln('Введите URL');
     readln(URL); 
     lengthOfURL := length(URL);
-    x:= 1;
     for var i := 1 to lengthOfURL do
     begin
-        sResult := Copy(Url,x,1);
+        sResult := Copy(Url,i,1);
         writeln(sResult);
-        x:= x + 1;
     end;
 end.
