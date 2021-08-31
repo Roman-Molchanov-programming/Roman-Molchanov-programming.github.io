@@ -1,5 +1,4 @@
-﻿uses GraphABC;
-var URL: string;
+﻿var URL: string;
 lengthOfURL: integer;
 begin
     writeln('Введите URL');
